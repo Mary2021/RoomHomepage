@@ -28,6 +28,6 @@ The designs were created to the following widths:
 - Weights: 500, 600, 700
 
 ## Links
-- https://www.pragimtech.com/blog/reactjs/install-reactjs/
+- https://create-react-app.dev/docs/getting-started
 - https://react-bootstrap.github.io/getting-started/introduction
 - https://expo.dev/tools
