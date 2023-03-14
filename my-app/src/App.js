@@ -1,9 +1,14 @@
+import React from 'react';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import ControlledCarousel from './components/Carousel'
+
 import './App.css'
 import logo from './images/logo.svg'
 
 function App() {
   return (
     <div className="App">
+      <ControlledCarousel />
       <img src={logo} alt='logo'/>
     Home
     Shop
