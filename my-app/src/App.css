@@ -1,46 +1,59 @@
-/* .App {
-  text-align: center;
-}
+@media only screen and (min-width: 200px) and (max-width: 375px) {
+  .Menu {
+    position: absolute;
+    align-items: center;
+    top: 5vh;
+    left: 5vw;
+    z-index: 2;
+  }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+  .MenuIcon {
+    padding-left: 5vw;
+  }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .carousel-control-prev-icon {
+    background-color:black;
+  }
+  
+  .carousel-control-next-icon {
+    background-color:black
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (min-width: 376px) {
+  .Menu {
+    position: absolute;
+    top: 5vh;
+    left: 7vw;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    align-items: center;
+    text-align: center;
+    text-transform: lowercase;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .MenuLink {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
   }
-} */
 
-.carousel-control-prev-icon {
-  background-color:black;
+  .carousel-control-prev-icon {
+    background-color:black;
+  }
+  
+  .carousel-control-next-icon {
+    background-color:black
+  }
+
+  .SliderContainer {
+    position: relative;
+    padding-left: 0%;
+    margin-left: 0%;
+  }
+
 }
 
-.carousel-control-next-icon {
-  background-color:black
-}
+
+

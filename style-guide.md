@@ -30,4 +30,6 @@ The designs were created to the following widths:
 ## Links
 - https://create-react-app.dev/docs/getting-started
 - https://react-bootstrap.github.io/getting-started/introduction
+- https://blog.webdevsimplified.com/2022-07/react-folder-structure/
+
 - https://expo.dev/tools
