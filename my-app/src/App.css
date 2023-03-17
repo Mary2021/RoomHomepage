@@ -11,12 +11,59 @@
     padding-left: 5vw;
   }
 
+  .SliderContainer {
+    position: relative;
+    padding-left: 0%;
+    padding-right: 0%;
+    height: 75vh;
+  }
+
   .carousel-control-prev-icon {
     background-color:black;
   }
   
   .carousel-control-next-icon {
     background-color:black
+  }
+
+  .carousel-control-prev {
+    opacity: 1;
+  }
+
+  .AngleLeft {
+    position: absolute;
+    top: 36.6vh;
+    left: 51.8vw;
+    background-color:black;
+    padding: 7.4%;
+    border-color: black;
+    border-style: solid;
+    border-width: 20px 33px;
+  }
+
+  .AngleLeft:hover {
+    background-color:gray;
+    border-color: gray;
+  }
+
+  .carousel-control-next {
+    opacity: 1;
+  }
+
+  .AngleRight{
+    position: absolute;
+    top: 36.6vh;
+    right: 0%;
+    background-color:black;
+    padding: 7.4%;
+    border-color: black;
+    border-style: solid;
+    border-width: 20px 33px;
+  }
+
+  .AngleRight:hover {
+    background-color:gray;
+    border-color: gray;
   }
 }
 
@@ -39,12 +86,44 @@
     color: white;
   }
 
-  .carousel-control-prev-icon {
-    background-color:black;
+  .carousel-control-prev {
+    opacity: 1;
   }
-  
-  .carousel-control-next-icon {
-    background-color:black
+
+  .AngleLeft {
+    position: relative;
+    top: 31.1vh;
+    left: 52.9vw;
+    background-color:black;
+    padding: 7.4%;
+    border-color: black;
+    border-style: solid;
+    border-width: 20px 33px;
+  }
+
+  .AngleLeft:hover {
+    background-color:gray;
+    border-color: gray;
+  }
+
+  .carousel-control-next {
+    opacity: 1;
+  }
+
+  .AngleRight{
+    position: relative;
+    top: 31.1vh;
+    right: 23.9vw;
+    background-color:black;
+    padding: 7.4%;
+    border-color: black;
+    border-style: solid;
+    border-width: 20px 33px;
+  }
+
+  .AngleRight:hover {
+    background-color:gray;
+    border-color: gray;
   }
 
   .SliderContainer {
@@ -52,10 +131,27 @@
     padding-left: 0%;
   }
 
+  .RemoveRightPadding {
+    padding-right: 0%;
+  }
+
+  .RemoveLeftPadding {
+    padding-left: 0%;
+  }
+
+  .SliderLink {
+    font-weight: 500;
+    font-family: 'League Spartan', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1vw;
+    text-decoration: none;
+    color: black;
+  }
+
   .MainContainer {
     padding-left: 0%;
     padding-right: 0%;
-  }
+  } 
 
 }
 

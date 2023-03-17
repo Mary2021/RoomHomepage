@@ -21,7 +21,6 @@ const NavBar = () => {
 
     return _ => {
       window.removeEventListener('resize', handleResize)
-    
     }
     })
 
