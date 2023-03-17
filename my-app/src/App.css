@@ -65,6 +65,12 @@
     background-color:gray;
     border-color: gray;
   }
+
+  .AboutContainer {
+    padding-top: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
 }
 
 @media only screen and (min-width: 376px) {
@@ -152,6 +158,12 @@
     padding-left: 0%;
     padding-right: 0%;
   } 
+
+  .AboutContainer {
+    padding-top: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 
 }
 
