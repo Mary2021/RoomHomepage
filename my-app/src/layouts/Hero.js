@@ -12,7 +12,7 @@ import MobileSlidePic2 from './../images/mobile-image-hero-2.jpg'
 import MobileSlidePic3 from './../images/mobile-image-hero-3.jpg'
 import AngleLeft from './../images/icon-angle-left.svg'
 import AngleRight from './../images/icon-angle-right.svg'
-import IconArrow from './../images/icon-arrow.svg'
+import SliderCard from "../components/SliderCard";
 
 const Hero = () => {
     const [index, setIndex] = useState(0);
@@ -54,7 +54,7 @@ const Hero = () => {
 
     if (window.innerWidth >= 376) {
         return (    
-            <Carousel activeIndex={index} onSelect={handleSelect} indicators={false} prevIcon={directionButtons(<button className='AngleLeft'><img src={AngleLeft} ></img></button>)} nextIcon={directionButtons(<button className='AngleRight'><img src={AngleRight}></img></button>)} >
+            <Carousel activeIndex={index} onSelect={handleSelect} indicators={false} prevIcon={directionButtons(<button className='AngleLeft'><img src={AngleLeft} alt={'angleToLeft'}></img></button>)} nextIcon={directionButtons(<button className='AngleRight'><img src={AngleRight} alt={'angleToRight'}></img></button>)} >
                 <Carousel.Item>
                     <Container fluid className="SliderContainer">
                         <Row>
@@ -66,14 +66,7 @@ const Hero = () => {
                                 />
                             </Col>
                             <Col lg={5} className='RemoveLeftPadding'>
-                                <div>
-                                    <h1>Discover innovative ways to decorate</h1>
-                                    <p>We provide unmatched quality, comfort, and style for property owners across the country. 
-                                Our experts combine form and function in bringing your vision to life. Create a room in your 
-                                own style with our collection and make your property a reflection of you and what you love.</p>
-                                    <a className="SliderLink">Shop now</a>
-                                    <img src={IconArrow}></img>
-                                </div>
+                                <SliderCard heading={'Discover innovative ways to decorate'} text={"We provide unmatched quality, comfort, and style for property owners across the country. Our experts combine form and function in bringing your vision to life. Create a room in your own style with our collection and make your property a reflection of you and what you love."} />
                             </Col>
                         </Row>
                     </Container>
@@ -89,15 +82,7 @@ const Hero = () => {
                                 />
                             </Col>
                             <Col lg={5} className='RemoveLeftPadding'>
-                                <div>
-                                    <h1>We are available all across the globe</h1>
-                                    <p>With stores all over the world, it's easy for you to find furniture for your home or place of business. 
-                                    Locally, we´re in most major cities throughout the country. Find the branch nearest you using our 
-                                    store locator. Any questions? Don't hesitate to contact us today.</p>
-                                    <a className="SliderLink">Shop now</a>
-                                    <img src={IconArrow}></img>
-                                </div>
-
+                                <SliderCard heading={'We are available all across the globe'} text={"With stores all over the world, it's easy for you to find furniture for your home or place of business. Locally, we´re in most major cities throughout the country. Find the branch nearest you using our store locator. Any questions? Don't hesitate to contact us today."} />
                             </Col>
                         </Row>
                     </Container>
@@ -113,12 +98,7 @@ const Hero = () => {
                                 />
                             </Col>
                             <Col lg={5} className='RemoveLeftPadding'>
-                                <div>
-                                    <h1>Manufactured with the best materials</h1>
-                                    <p>Our modern furniture store provide a high level of quality. Our company has invested in advanced technology to ensure that every product is made as perfect and as consistent as possible. With three decades of experience in this industry, we understand what customers want for their home and office.</p>
-                                    <a className="SliderLink">Shop now</a>
-                                    <img src={IconArrow}></img>
-                                </div>
+                                <SliderCard heading={'Manufactured with the best materials'} text={"Our modern furniture store provide a high level of quality. Our company has invested in advanced technology to ensure that every product is made as perfect and as consistent as possible. With three decades of experience in this industry, we understand what customers want for their home and office."} />
                             </Col>
                         </Row>
                     </Container>
@@ -127,7 +107,7 @@ const Hero = () => {
         )
     } else { 
         return(
-            <Carousel activeIndex={index} onSelect={handleSelect} indicators={false} prevIcon={directionButtons(<button className='AngleLeft'><img src={AngleLeft} ></img></button>)} nextIcon={directionButtons(<button className='AngleRight'><img src={AngleRight}></img></button>)} >
+            <Carousel activeIndex={index} onSelect={handleSelect} indicators={false} prevIcon={directionButtons(<button className='AngleLeft'><img src={AngleLeft} alt={'angleToLeft'} ></img></button>)} nextIcon={directionButtons(<button className='AngleRight'><img src={AngleRight} alt={'angleToRight'}></img></button>)} >
                 <Carousel.Item>
                     <Container fluid className="SliderContainer">
                         <img
@@ -135,14 +115,7 @@ const Hero = () => {
                         src={MobileSlidePic1}
                         alt="First slide"
                         />
-                        <div>
-                            <h1 className="HeroHeading">Discover innovative ways to decorate</h1>
-                            <p>We provide unmatched quality, comfort, and style for property owners across the country. 
-                        Our experts combine form and function in bringing your vision to life. Create a room in your 
-                        own style with our collection and make your property a reflection of you and what you love.</p>
-                            <a>Shop now</a>
-                            <img src={IconArrow}></img>
-                        </div>
+                        <SliderCard heading={'Discover innovative ways to decorate'} text={"We provide unmatched quality, comfort, and style for property owners across the country. Our experts combine form and function in bringing your vision to life. Create a room in your own style with our collection and make your property a reflection of you and what you love."} />
                     </Container>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -151,14 +124,7 @@ const Hero = () => {
                     src={MobileSlidePic2}
                     alt="Second slide"
                     />
-                    <div>
-                        <h1>We are available all across the globe</h1>
-                        <p>With stores all over the world, it's easy for you to find furniture for your home or place of business. 
-                    Locally, we´re in most major cities throughout the country. Find the branch nearest you using our 
-                    store locator. Any questions? Don't hesitate to contact us today.</p>
-                        <a>Shop now</a>
-                        <img src={IconArrow}></img>
-                    </div>
+                    <SliderCard heading={'We are available all across the globe'} text={"With stores all over the world, it's easy for you to find furniture for your home or place of business. Locally, we´re in most major cities throughout the country. Find the branch nearest you using our store locator. Any questions? Don't hesitate to contact us today."} />
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
@@ -166,14 +132,7 @@ const Hero = () => {
                     src={MobileSlidePic3}
                     alt="Third slide"
                     />
-                    <div>
-                        <h1>Manufactured with the best materials</h1>
-                        <p>Our modern furniture store provide a high level of quality. Our company has invested in advanced technology 
-                    to ensure that every product is made as perfect and as consistent as possible. With three decades of 
-                    experience in this industry, we understand what customers want for their home and office.</p>
-                        <a>Shop now</a>
-                        <img src={IconArrow}></img>
-                    </div>
+                    <SliderCard heading={'Manufactured with the best materials'} text={"Our modern furniture store provide a high level of quality. Our company has invested in advanced technology to ensure that every product is made as perfect and as consistent as possible. With three decades of experience in this industry, we understand what customers want for their home and office."} />
                 </Carousel.Item>
             </Carousel>
         )

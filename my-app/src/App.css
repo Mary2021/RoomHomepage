@@ -18,6 +18,19 @@
     height: 75vh;
   }
 
+  .CardContainer {
+    padding: 15%;
+  }
+
+  .SliderLink {
+    font-weight: 500;
+    font-family: 'League Spartan', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1vw;
+    text-decoration: none;
+    color: black;
+  }
+
   .carousel-control-prev-icon {
     background-color:black;
   }
@@ -143,6 +156,10 @@
 
   .RemoveLeftPadding {
     padding-left: 0%;
+  }
+
+  .CardContainer {
+    padding: 15%;
   }
 
   .SliderLink {
