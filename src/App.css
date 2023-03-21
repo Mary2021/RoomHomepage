@@ -63,15 +63,15 @@
     text-transform: uppercase;
     letter-spacing: 1vw;
     text-decoration: none;
-    color: black;
+    color: hsl(0, 0%, 0%);
   }
 
   .carousel-control-prev-icon {
-    background-color:black;
+    background-color:hsl(0, 0%, 0%);
   }
   
   .carousel-control-next-icon {
-    background-color:black
+    background-color:hsl(0, 0%, 0%);
   }
 
   .carousel-control-prev {
@@ -82,16 +82,16 @@
     position: absolute;
     top: 36.6vh;
     left: 51.8vw;
-    background-color:black;
+    background-color:hsl(0, 0%, 0%);
     padding: 7.4%;
-    border-color: black;
+    border-color: hsl(0, 0%, 0%);
     border-style: solid;
     border-width: 20px 33px;
   }
 
   .AngleLeft:hover {
-    background-color:gray;
-    border-color: gray;
+    background-color:hsl(0, 0%, 63%);
+    border-color: hsl(0, 0%, 63%);
   }
 
   .carousel-control-next {
@@ -102,16 +102,16 @@
     position: absolute;
     top: 36.6vh;
     right: 0%;
-    background-color:black;
+    background-color:hsl(0, 0%, 0%);
     padding: 7.4%;
-    border-color: black;
+    border-color: hsl(0, 0%, 0%);
     border-style: solid;
     border-width: 20px 33px;
   }
 
   .AngleRight:hover {
-    background-color:gray;
-    border-color: gray;
+    background-color:hsl(0, 0%, 63%);
+    border-color: hsl(0, 0%, 63%);
   }
 
   .AboutContainer {
@@ -135,9 +135,32 @@
   }
   
   .MenuLink {
+    position: relative;
+    justify-content: center;
     padding: 10px;
     text-decoration: none;
-    color: white;
+    color: hsl(0, 0%, 100%);
+  }
+
+  .MenuLink:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: hsl(0, 0%, 100%);
+  }
+
+  .MenuLink:active {
+    cursor: pointer;
+    color: hsl(0, 0%, 100%);
+  }
+
+  .MenuLink:active::after {
+    content: '';
+    height: 2px;
+    width: 15%;
+    background: hsl(0, 0%, 100%);
+    position: absolute;
+    bottom: 0;
+    left: calc(40%);
   }
 
   .carousel-control-prev {
@@ -148,16 +171,16 @@
     position: relative;
     top: 31.1vh;
     left: 52.9vw;
-    background-color:black;
+    background-color:hsl(0, 0%, 0%);
     padding: 7.4%;
-    border-color: black;
+    border-color: hsl(0, 0%, 0%);
     border-style: solid;
     border-width: 20px 33px;
   }
 
-  .AngleLeft:hover {
-    background-color:gray;
-    border-color: gray;
+  .AngleLeft:active {
+    background-color:hsl(0, 0%, 63%);
+    border-color: hsl(0, 0%, 63%);
   }
 
   .carousel-control-next {
@@ -168,16 +191,16 @@
     position: relative;
     top: 31.1vh;
     right: 23.9vw;
-    background-color:black;
+    background-color:hsl(0, 0%, 0%);
     padding: 7.4%;
-    border-color: black;
+    border-color: hsl(0, 0%, 0%);
     border-style: solid;
     border-width: 20px 33px;
   }
 
-  .AngleRight:hover {
-    background-color:gray;
-    border-color: gray;
+  .AngleRight:active {
+    background-color:hsl(0, 0%, 63%);
+    border-color: hsl(0, 0%, 63%);
   }
 
   .SliderContainer {
@@ -203,7 +226,18 @@
     text-transform: uppercase;
     letter-spacing: 1vw;
     text-decoration: none;
-    color: black;
+    color: hsl(0, 0%, 0%);
+  }
+
+  .SliderLink:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: hsl(0, 0%, 0%);
+  }
+
+  .SliderLink:active {
+    cursor: pointer;
+    color: hsl(0, 0%, 63%);
   }
 
   .MainContainer {
@@ -216,7 +250,6 @@
     padding-left: 5%;
     padding-right: 5%;
   }
-
 }
 
 
