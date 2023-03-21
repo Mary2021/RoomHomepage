@@ -39,8 +39,6 @@ const NavBar = () => {
             </header>
         )
     } else {
-        console.log(open)
-        console.log(document.className)
         return(
             <header className='Menu'>
                 <img src={hb} className="MenuIcon" alt="MenuIcon" onClick={() => setOpen(!open)}/>
