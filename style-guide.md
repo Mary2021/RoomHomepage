@@ -26,10 +26,3 @@ The designs were created to the following widths:
 
 - Family: [League Spartan](https://fonts.google.com/specimen/League+Spartan)
 - Weights: 500, 600, 700
-
-## Useful links
-- https://create-react-app.dev/docs/getting-started
-- https://react-bootstrap.github.io/getting-started/introduction
-- https://blog.webdevsimplified.com/2022-07/react-folder-structure/
-- https://github.com/react-bootstrap/react-bootstrap/issues/3245 - controlling carousel next and previous with custom buttons 
-- https://expo.dev/tools
