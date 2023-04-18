@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/RoomHomepage/static/css/main.6b889f0d.css",
-    "main.js": "/RoomHomepage/static/js/main.12679c4a.js",
+    "main.js": "/RoomHomepage/static/js/main.2090ea36.js",
     "static/js/787.28cb0dcd.chunk.js": "/RoomHomepage/static/js/787.28cb0dcd.chunk.js",
     "static/media/desktop-image-hero-1.jpg": "/RoomHomepage/static/media/desktop-image-hero-1.91901d0d47ea68db9434.jpg",
     "static/media/desktop-image-hero-3.jpg": "/RoomHomepage/static/media/desktop-image-hero-3.05fd679aa0d31e01c176.jpg",
@@ -18,11 +18,11 @@
     "static/media/icon-angle-left.svg": "/RoomHomepage/static/media/icon-angle-left.d53877dfd9c6774a68749ad0239b4ce1.svg",
     "static/media/icon-angle-right.svg": "/RoomHomepage/static/media/icon-angle-right.0ed3f81fbd14b3bd61d875b7df144e4c.svg",
     "main.6b889f0d.css.map": "/RoomHomepage/static/css/main.6b889f0d.css.map",
-    "main.12679c4a.js.map": "/RoomHomepage/static/js/main.12679c4a.js.map",
+    "main.2090ea36.js.map": "/RoomHomepage/static/js/main.2090ea36.js.map",
     "787.28cb0dcd.chunk.js.map": "/RoomHomepage/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6b889f0d.css",
-    "static/js/main.12679c4a.js"
+    "static/js/main.2090ea36.js"
   ]
 }
