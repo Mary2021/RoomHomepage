@@ -28,7 +28,7 @@ const Main = () => {
     })
 
     return (    
-        <Container fluid className="MainContainer">
+        <Container fluid className="MainContainer" role="main">
             <Row>
                 <Col lg={4} xl={4} className="d-sm-none d-md-none d-lg-block p-lg-0">
                     <img
