@@ -60,7 +60,6 @@ const Hero = () => {
                                 className="w-100"
                                 src={(window.innerWidth >= 426) ? SlidePic1 : MobileSlidePic1 }
                                 alt="First slide"
-                                role="banner"
                                 />
                                 <Container className="d-md-none d-lg-none CarouselButtonContainer" align="end">
                                     <button className='AngleLeft' onClick={onPrevClick}><img src={AngleLeft} alt={'angleToLeft'}></img></button>
