@@ -28,7 +28,7 @@ const NavBar = () => {
 
     document.className = open ? 'visible' : 'hidden';
 
-    if (window.innerWidth >= 376) {
+    if (window.outerWidth >= 768) {
         return (
             <header className='Menu'>
                 <img src={logo} alt='logo'className='Logo' />

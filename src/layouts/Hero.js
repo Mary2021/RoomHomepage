@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React, { useEffect, useRef, useState } from "react"
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Carousel from 'react-bootstrap/Carousel'
 import Container from 'react-bootstrap/Container';
@@ -16,7 +16,6 @@ import SliderCard from "../components/SliderCard";
 
 const Hero = () => {
     const [index, setIndex] = useState(0);
-
     const handleSelect = (selectedIndex, e) => {
       setIndex(selectedIndex);
     };
@@ -41,102 +40,92 @@ const Hero = () => {
     }
     })
 
-    const directionButtons = (direction) => {
-        return (
-          <span
-            aria-hidden="true"
-            className={direction === "Next" ? "button-next" : "button-prev"}
-          >
-            {direction}
-          </span>
-        );
-      };
+    const ref = useRef(null);
 
-    if (window.innerWidth >= 376) {
-        return (    
-            <Carousel activeIndex={index} onSelect={handleSelect} indicators={false} prevIcon={directionButtons(<button className='AngleLeft'><img src={AngleLeft} alt={'angleToLeft'}></img></button>)} nextIcon={directionButtons(<button className='AngleRight'><img src={AngleRight} alt={'angleToRight'}></img></button>)} >
+    const onPrevClick = () => {
+        ref.current.prev();
+      };
+    const onNextClick = () => {
+        ref.current.next();
+    };
+
+    return (    
+        <Container fluid className="SliderContainer">
+            <Carousel activeIndex={index} onSelect={handleSelect} indicators={false} controls={false} ref={ref}>
                 <Carousel.Item>
-                    <Container fluid className="SliderContainer">
+                    <Container fluid className="SliderItemContainer">
                         <Row>
-                            <Col lg={7} className='RemoveRightPadding'>
+                            <Col sm={6} md={7} lg={7} xxl={7} className='SlideImgCol'>
                                 <img
-                                className="d-block w-100"
-                                src={SlidePic1}
+                                className="w-100"
+                                src={(window.innerWidth >= 426) ? SlidePic1 : MobileSlidePic1 }
                                 alt="First slide"
                                 />
+                                <Container className="d-md-none d-lg-none CarouselButtonContainer" align="end">
+                                    <button className='AngleLeft' onClick={onPrevClick}><img src={AngleLeft} alt={'angleToLeft'}></img></button>
+                                    <button className='AngleRight' onClick={onNextClick}><img src={AngleRight} alt={'angleToRight'}></img></button>
+                                </Container>
                             </Col>
-                            <Col lg={5} className='RemoveLeftPadding'>
+                            <Col sm={6} md={5} lg={5} xxl={5} className='SlideTxtCol'>
                                 <SliderCard heading={'Discover innovative ways to decorate'} text={"We provide unmatched quality, comfort, and style for property owners across the country. Our experts combine form and function in bringing your vision to life. Create a room in your own style with our collection and make your property a reflection of you and what you love."} />
+                                <Container className="d-none d-md-block d-lg-block CarouselButtonContainer">
+                                    <button className='AngleLeft' onClick={onPrevClick}><img src={AngleLeft} alt={'angleToLeft'}></img></button>
+                                    <button className='AngleRight' onClick={onNextClick}><img src={AngleRight} alt={'angleToRight'}></img></button>
+                                </Container>
                             </Col>
                         </Row>
                     </Container>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <Container fluid className="SliderContainer">
+                    <Container fluid className="SliderItemContainer">
                         <Row>
-                            <Col lg={7} className='RemoveRightPadding'>        
+                            <Col sm={6} md={7} lg={7} xxl={7} className='SlideImgCol'>        
                                 <img 
-                                    className="d-block w-100"
-                                    src={SlidePic2}
+                                    className="w-100"
+                                    src={(window.innerWidth >= 426) ? SlidePic2 : MobileSlidePic2 }
                                     alt="Second slide"
                                 />
+                                <Container className="d-md-none d-lg-none CarouselButtonContainer" align="end">
+                                    <button className='AngleLeft' onClick={onPrevClick}><img src={AngleLeft} alt={'angleToLeft'}></img></button>
+                                    <button className='AngleRight' onClick={onNextClick}><img src={AngleRight} alt={'angleToRight'}></img></button>
+                                </Container>
                             </Col>
-                            <Col lg={5} className='RemoveLeftPadding'>
+                            <Col sm={6} md={5} lg={5} xxl={5} className='SlideTxtCol'>
                                 <SliderCard heading={'We are available all across the globe'} text={"With stores all over the world, it's easy for you to find furniture for your home or place of business. Locally, we´re in most major cities throughout the country. Find the branch nearest you using our store locator. Any questions? Don't hesitate to contact us today."} />
+                                <Container className="d-none d-md-block d-lg-block CarouselButtonContainer">
+                                    <button className='AngleLeft' onClick={onPrevClick}><img src={AngleLeft} alt={'angleToLeft'}></img></button>
+                                    <button className='AngleRight' onClick={onNextClick}><img src={AngleRight} alt={'angleToRight'}></img></button>
+                                </Container>
                             </Col>
                         </Row>
                     </Container>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <Container fluid className="SliderContainer">
+                    <Container fluid className="SliderItemContainer">
                         <Row>
-                            <Col lg={7} className='RemoveRightPadding'>
+                            <Col sm={6} md={7} lg={7} xxl={7} className='SlideImgCol'>
                                 <img
-                                className="d-block w-100"
-                                src={SlidePic3}
+                                className="w-100"
+                                src={(window.innerWidth >= 426) ? SlidePic3 : MobileSlidePic3}
                                 alt="Third slide"
                                 />
+                                <Container className="d-md-none d-lg-none CarouselButtonContainer" align="end">
+                                    <button className='AngleLeft' onClick={onPrevClick}><img src={AngleLeft} alt={'angleToLeft'}></img></button>
+                                    <button className='AngleRight' onClick={onNextClick}><img src={AngleRight} alt={'angleToRight'}></img></button>
+                                </Container>
                             </Col>
-                            <Col lg={5} className='RemoveLeftPadding'>
+                            <Col sm={6} md={5} lg={5} xxl={5} className='SlideTxtCol'>
                                 <SliderCard heading={'Manufactured with the best materials'} text={"Our modern furniture store provide a high level of quality. Our company has invested in advanced technology to ensure that every product is made as perfect and as consistent as possible. With three decades of experience in this industry, we understand what customers want for their home and office."} />
+                                <Container className="d-none d-md-block d-lg-block CarouselButtonContainer">
+                                    <button className='AngleLeft' onClick={onPrevClick}><img src={AngleLeft} alt={'angleToLeft'}></img></button>
+                                    <button className='AngleRight' onClick={onNextClick}><img src={AngleRight} alt={'angleToRight'}></img></button>
+                                </Container>
                             </Col>
                         </Row>
                     </Container>
                 </Carousel.Item>
             </Carousel>
-        )
-    } else { 
-        return(
-            <Carousel activeIndex={index} onSelect={handleSelect} indicators={false} prevIcon={directionButtons(<button className='AngleLeft'><img src={AngleLeft} alt={'angleToLeft'} ></img></button>)} nextIcon={directionButtons(<button className='AngleRight'><img src={AngleRight} alt={'angleToRight'}></img></button>)} >
-                <Carousel.Item>
-                    <Container fluid className="SliderContainer">
-                        <img
-                        className="d-block w-100"
-                        src={MobileSlidePic1}
-                        alt="First slide"
-                        />
-                        <SliderCard heading={'Discover innovative ways to decorate'} text={"We provide unmatched quality, comfort, and style for property owners across the country. Our experts combine form and function in bringing your vision to life. Create a room in your own style with our collection and make your property a reflection of you and what you love."} />
-                    </Container>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                    className="d-block w-100"
-                    src={MobileSlidePic2}
-                    alt="Second slide"
-                    />
-                    <SliderCard heading={'We are available all across the globe'} text={"With stores all over the world, it's easy for you to find furniture for your home or place of business. Locally, we´re in most major cities throughout the country. Find the branch nearest you using our store locator. Any questions? Don't hesitate to contact us today."} />
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                    className="d-block w-100"
-                    src={MobileSlidePic3}
-                    alt="Third slide"
-                    />
-                    <SliderCard heading={'Manufactured with the best materials'} text={"Our modern furniture store provide a high level of quality. Our company has invested in advanced technology to ensure that every product is made as perfect and as consistent as possible. With three decades of experience in this industry, we understand what customers want for their home and office."} />
-                </Carousel.Item>
-            </Carousel>
-        )
-    }
+        </Container>
+    )
 }
-
 export default Hero

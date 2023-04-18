@@ -4,14 +4,15 @@ import './App.css'
 import NavBar from './layouts/NavBar';
 import Hero from './layouts/Hero';
 import Main from './layouts/Main';
+import Container from 'react-bootstrap/esm/Container';
 
 function App() {
   return (
-    <div className="App">
+    <Container fluid className="App">
       <NavBar />
       <Hero />
       <Main />
-    </div>
+    </Container>
   );
 }
 

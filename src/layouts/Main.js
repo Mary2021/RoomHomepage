@@ -27,53 +27,32 @@ const Main = () => {
     }
     })
 
-    if (window.innerWidth >= 376) {
-        return (    
-            <Container fluid className="MainContainer">
-                <Row>
-                    <Col>
-                        <img
-                        className="d-block w-100"
-                        src={LeftPic}
-                        alt="Third slide"
-                        />
-                    </Col>
-                    <Col lg={5}>
-                        <div className="AboutContainer">
-                            <h2>About our furniture</h2>
-                            <p>Our multifunctional collection blends design and function to suit your individual taste. Make each room unique, or pick a cohesive theme that best express your interests and what inspires you. Find the furniture pieces you need, from traditional to contemporary styles or anything in between. Product specialists are available to help you create your dream space.</p>
-                        </div>
-                    </Col>
-                    <Col>
-                        <img
-                        className="d-block w-100"
-                        src={RightPic}
-                        alt="Third slide"
-                        />
-                    </Col>
-                    </Row>
-                </Container>
-        )
-    } else {
-        return (
-            <div>
-                <img
+    return (    
+        <Container fluid className="MainContainer">
+            <Row>
+                <Col lg={4} xl={4} className="d-sm-none d-md-none d-lg-block p-lg-0">
+                    <img
                     className="d-block w-100"
                     src={LeftPic}
                     alt="Third slide"
-                />
-                <div className="AboutContainer">
-                    <h2>About our furniture</h2>
-                    <p>Our multifunctional collection blends design and function to suit your individual taste. Make each room unique, or pick a cohesive theme that best express your interests and what inspires you. Find the furniture pieces you need, from traditional to contemporary styles or anything in between. Product specialists are available to help you create your dream space.</p>
-                </div>
-                <img
+                    />
+                </Col>
+                <Col sm={6} md={7} lg={4} xl={4} className="p-lg-0">
+                    <div className="AboutContainer">
+                        <h2>About our furniture</h2>
+                        <p>Our multifunctional collection blends design and function to suit your individual taste. Make each room unique, or pick a cohesive theme that best express your interests and what inspires you. Find the furniture pieces you need, from traditional to contemporary styles or anything in between. Product specialists are available to help you create your dream space.</p>
+                    </div>
+                </Col>
+                <Col sm={6} md={5} lg={4} xl={4} className="p-lg-0 RightPic">
+                    <img
                     className="d-block w-100"
                     src={RightPic}
                     alt="Third slide"
-                />
-            </div>
-        )
-    }
+                    />
+                </Col>
+                </Row>
+            </Container>
+    )
 }
 
 export default Main

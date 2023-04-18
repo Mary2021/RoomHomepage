@@ -20,9 +20,7 @@ This is a solution to the [Room homepage challenge on Frontend Mentor](https://w
 
 Users should be able to:
 
-- View the optimal layout for:
-  - Mobile: 375px
-  - Desktop: 1440px
+- View the optimal layout depending on screen size
 - See hover states for all interactive elements on the page
 - Navigate the slider using either their mouse/trackpad or keyboard
 
@@ -51,6 +49,7 @@ Users should be able to:
 
 - [React folder structure](https://blog.webdevsimplified.com/2022-07/react-folder-structure/)
 - [Controlling carousel next and previous with custom buttons ](https://github.com/react-bootstrap/react-bootstrap/issues/3245) 
+/ https://stackoverflow.com/questions/67459939/how-to-control-react-bootstrap-carousel-with-custom-buttons
 
 ## Author
 
