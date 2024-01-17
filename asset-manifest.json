@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/RoomHomepage/static/css/main.6b889f0d.css",
-    "main.js": "/RoomHomepage/static/js/main.17c4d6b1.js",
-    "static/js/787.28cb0dcd.chunk.js": "/RoomHomepage/static/js/787.28cb0dcd.chunk.js",
+    "main.css": "/RoomHomepage/static/css/main.a2d9d40a.css",
+    "main.js": "/RoomHomepage/static/js/main.e792c1c8.js",
+    "static/js/787.d4aba7ab.chunk.js": "/RoomHomepage/static/js/787.d4aba7ab.chunk.js",
     "static/media/desktop-image-hero-1.jpg": "/RoomHomepage/static/media/desktop-image-hero-1.91901d0d47ea68db9434.jpg",
     "static/media/desktop-image-hero-3.jpg": "/RoomHomepage/static/media/desktop-image-hero-3.05fd679aa0d31e01c176.jpg",
     "static/media/desktop-image-hero-2.jpg": "/RoomHomepage/static/media/desktop-image-hero-2.9d35405672f4fca67945.jpg",
@@ -17,12 +17,12 @@
     "static/media/icon-hamburger.svg": "/RoomHomepage/static/media/icon-hamburger.dc022bac537a273572af58dec556ed7e.svg",
     "static/media/icon-angle-left.svg": "/RoomHomepage/static/media/icon-angle-left.d53877dfd9c6774a68749ad0239b4ce1.svg",
     "static/media/icon-angle-right.svg": "/RoomHomepage/static/media/icon-angle-right.0ed3f81fbd14b3bd61d875b7df144e4c.svg",
-    "main.6b889f0d.css.map": "/RoomHomepage/static/css/main.6b889f0d.css.map",
-    "main.17c4d6b1.js.map": "/RoomHomepage/static/js/main.17c4d6b1.js.map",
-    "787.28cb0dcd.chunk.js.map": "/RoomHomepage/static/js/787.28cb0dcd.chunk.js.map"
+    "main.a2d9d40a.css.map": "/RoomHomepage/static/css/main.a2d9d40a.css.map",
+    "main.e792c1c8.js.map": "/RoomHomepage/static/js/main.e792c1c8.js.map",
+    "787.d4aba7ab.chunk.js.map": "/RoomHomepage/static/js/787.d4aba7ab.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6b889f0d.css",
-    "static/js/main.17c4d6b1.js"
+    "static/css/main.a2d9d40a.css",
+    "static/js/main.e792c1c8.js"
   ]
 }
