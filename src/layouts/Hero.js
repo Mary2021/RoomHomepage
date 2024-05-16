@@ -115,7 +115,7 @@ const Hero = () => {
                                 </Container>
                             </Col>
                             <Col sm={6} md={5} lg={5} xxl={5} className='SlideTxtCol'>
-                                <SliderCard heading={'Manufactured with the best materials'} text={"Our modern furniture store provide a high level of quality. Our company has invested in advanced technology to ensure that every product is made as perfect and as consistent as possible. With three decades of experience in this industry, we understand what customers want for their home and office."} />
+                                <SliderCard heading={'Manufactured with the best materials'} text={"Our modern furniture store provide a high level of quality. Our company has invested in advanced technology to ensure that every product is made as perfect and as consistent as possible. With three decades of experience, we understand what customers want."} />
                                 <Container className="d-none d-md-block d-lg-block CarouselButtonContainer">
                                     <button className='AngleLeft' onClick={onPrevClick}><img src={AngleLeft} alt={'angleToLeft'}></img></button>
                                     <button className='AngleRight' onClick={onNextClick}><img src={AngleRight} alt={'angleToRight'}></img></button>

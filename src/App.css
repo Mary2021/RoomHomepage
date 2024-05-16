@@ -594,7 +594,7 @@
   }
 }
 
-@media only screen and (min-width: 1201px) and (max-width: 1440px) {
+@media only screen and (min-width: 1201px) and (max-width: 1500px) {
   .App {
     padding-left: 0%;
     padding-right: 0%;
@@ -736,5 +736,428 @@
   }
 }
 
+@media only screen and (min-width: 1501px) and (max-width: 1600px) {
+  .App {
+    padding-left: 0%;
+    padding-right: 0%;
+    max-height: 834px;
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
 
+  .Menu {
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    align-items: center;
+    text-align: center;
+    text-transform: lowercase;
+  }
+  
+  .MenuLink {
+    position: relative;
+    justify-content: center;
+    padding: 10px;
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+  }
 
+  .MenuLink:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: hsl(0, 0%, 100%);
+  }
+
+  .MenuLink:active {
+    cursor: pointer;
+    color: hsl(0, 0%, 100%);
+  }
+
+  .MenuLink:active::after {
+    content: '';
+    height: 2px;
+    width: 15%;
+    background: hsl(0, 0%, 100%);
+    position: absolute;
+    bottom: 0;
+    left: calc(40%);
+  }
+
+  .SliderContainer {
+    margin-left: 0%;
+    margin-right: 0%;
+    padding: 0%;
+    max-height: 534px;
+  }
+
+  .SliderItemContainer {
+    position: relative;
+    padding-left: 0%;
+    max-height: 533px;
+  }
+
+  .SlideImgCol {
+    padding-right: 0%;
+  }
+
+  .CardContainer {
+    padding: 15%;
+    height: 79%;
+  }
+
+  .SlideTxtCol {
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+
+  .CarouselButtonContainer {
+    position: relative;
+    padding-left: 0%;
+  }
+
+  .AngleLeft {
+    background-color:hsl(0, 0%, 0%);
+    padding: 4%;
+    border-color: hsl(0, 0%, 0%);
+    border-style: solid;
+  }
+
+  .AngleLeft:active {
+    background-color:hsl(0, 0%, 63%);
+    border-color: hsl(0, 0%, 63%);
+  }
+
+  .carousel-control-next {
+    opacity: 1;
+  }
+
+  .AngleRight{
+    background-color:hsl(0, 0%, 0%);
+    padding: 4%;
+    border-color: hsl(0, 0%, 0%);
+    border-style: solid;
+  }
+
+  .AngleRight:active {
+    background-color:hsl(0, 0%, 63%);
+    border-color: hsl(0, 0%, 63%);
+  }
+
+  .SliderLink {
+    font-weight: 500;
+    font-family: 'League Spartan', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1vw;
+    text-decoration: none;
+    color: hsl(0, 0%, 0%);
+  }
+
+  .SliderLink:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: hsl(0, 0%, 0%);
+  }
+
+  .SliderLink:active {
+    cursor: pointer;
+    color: hsl(0, 0%, 63%);
+  }
+
+  .MainContainer {
+    padding-left: 0%;
+    padding-right: 0%;
+  } 
+
+  .AboutContainer {
+    padding-top: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+@media only screen and (min-width: 1601px) and (max-width: 1700px) {
+  .App {
+    padding-left: 0%;
+    padding-right: 0%;
+    max-height: 834px;
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+
+  .Menu {
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    align-items: center;
+    text-align: center;
+    text-transform: lowercase;
+  }
+  
+  .MenuLink {
+    position: relative;
+    justify-content: center;
+    padding: 10px;
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+  }
+
+  .MenuLink:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: hsl(0, 0%, 100%);
+  }
+
+  .MenuLink:active {
+    cursor: pointer;
+    color: hsl(0, 0%, 100%);
+  }
+
+  .MenuLink:active::after {
+    content: '';
+    height: 2px;
+    width: 15%;
+    background: hsl(0, 0%, 100%);
+    position: absolute;
+    bottom: 0;
+    left: calc(40%);
+  }
+
+  .SliderContainer {
+    margin-left: 0%;
+    margin-right: 0%;
+    padding: 0%;
+    max-height: 534px;
+  }
+
+  .SliderItemContainer {
+    position: relative;
+    padding-left: 0%;
+    max-height: 533px;
+  }
+
+  .SlideImgCol {
+    padding-right: 0%;
+  }
+
+  .CardContainer {
+    padding: 15%;
+    height: 75%;
+  }
+
+  .SlideTxtCol {
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+
+  .CarouselButtonContainer {
+    position: relative;
+    padding-left: 0%;
+  }
+
+  .AngleLeft {
+    background-color:hsl(0, 0%, 0%);
+    padding: 4%;
+    border-color: hsl(0, 0%, 0%);
+    border-style: solid;
+  }
+
+  .AngleLeft:active {
+    background-color:hsl(0, 0%, 63%);
+    border-color: hsl(0, 0%, 63%);
+  }
+
+  .carousel-control-next {
+    opacity: 1;
+  }
+
+  .AngleRight{
+    background-color:hsl(0, 0%, 0%);
+    padding: 4%;
+    border-color: hsl(0, 0%, 0%);
+    border-style: solid;
+  }
+
+  .AngleRight:active {
+    background-color:hsl(0, 0%, 63%);
+    border-color: hsl(0, 0%, 63%);
+  }
+
+  .SliderLink {
+    font-weight: 500;
+    font-family: 'League Spartan', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1vw;
+    text-decoration: none;
+    color: hsl(0, 0%, 0%);
+  }
+
+  .SliderLink:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: hsl(0, 0%, 0%);
+  }
+
+  .SliderLink:active {
+    cursor: pointer;
+    color: hsl(0, 0%, 63%);
+  }
+
+  .MainContainer {
+    padding-left: 0%;
+    padding-right: 0%;
+  } 
+
+  .AboutContainer {
+    padding-top: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+@media only screen and (min-width: 1701px) and (max-width: 1800px) {
+  .App {
+    padding-left: 0%;
+    padding-right: 0%;
+    max-height: 834px;
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+
+  .Menu {
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    align-items: center;
+    text-align: center;
+    text-transform: lowercase;
+  }
+  
+  .MenuLink {
+    position: relative;
+    justify-content: center;
+    padding: 10px;
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+  }
+
+  .MenuLink:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: hsl(0, 0%, 100%);
+  }
+
+  .MenuLink:active {
+    cursor: pointer;
+    color: hsl(0, 0%, 100%);
+  }
+
+  .MenuLink:active::after {
+    content: '';
+    height: 2px;
+    width: 15%;
+    background: hsl(0, 0%, 100%);
+    position: absolute;
+    bottom: 0;
+    left: calc(40%);
+  }
+
+  .SliderContainer {
+    margin-left: 0%;
+    margin-right: 0%;
+    padding: 0%;
+    max-height: 534px;
+  }
+
+  .SliderItemContainer {
+    position: relative;
+    padding-left: 0%;
+    max-height: 533px;
+  }
+
+  .SlideImgCol {
+    padding-right: 0%;
+  }
+
+  .CardContainer {
+    padding: 15%;
+    height: 70%;
+  }
+
+  .SlideTxtCol {
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+
+  .CarouselButtonContainer {
+    position: relative;
+    padding-left: 0%;
+  }
+
+  .AngleLeft {
+    background-color:hsl(0, 0%, 0%);
+    padding: 4%;
+    border-color: hsl(0, 0%, 0%);
+    border-style: solid;
+  }
+
+  .AngleLeft:active {
+    background-color:hsl(0, 0%, 63%);
+    border-color: hsl(0, 0%, 63%);
+  }
+
+  .carousel-control-next {
+    opacity: 1;
+  }
+
+  .AngleRight{
+    background-color:hsl(0, 0%, 0%);
+    padding: 4%;
+    border-color: hsl(0, 0%, 0%);
+    border-style: solid;
+  }
+
+  .AngleRight:active {
+    background-color:hsl(0, 0%, 63%);
+    border-color: hsl(0, 0%, 63%);
+  }
+
+  .SliderLink {
+    font-weight: 500;
+    font-family: 'League Spartan', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1vw;
+    text-decoration: none;
+    color: hsl(0, 0%, 0%);
+  }
+
+  .SliderLink:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: hsl(0, 0%, 0%);
+  }
+
+  .SliderLink:active {
+    cursor: pointer;
+    color: hsl(0, 0%, 63%);
+  }
+
+  .MainContainer {
+    padding-left: 0%;
+    padding-right: 0%;
+  } 
+
+  .AboutContainer {
+    padding-top: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
